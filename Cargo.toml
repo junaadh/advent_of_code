@@ -1,0 +1,11 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aoc24 = { version = "0.1.0", path = "year/aoc24" }
+
+[workspace]
+members = ["utils", "year/*"]
+resolver = "2"
