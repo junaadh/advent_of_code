@@ -11,7 +11,9 @@ fn main() {
                 if let Some(value) = name.strip_prefix("day") {
                     if let Some(value) = value.strip_suffix(".txt") {
                         if let Ok(num) = value.parse::<usize>() {
-                            date_value = num + 1;
+                            if date_value < num + 1 {
+                                date_value = num + 1;
+                            }
                         }
                     }
                 }
