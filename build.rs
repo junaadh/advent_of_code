@@ -50,5 +50,6 @@ fn main() {
 
     // Set the environment variable DATE to the selected value
     println!("cargo:env=DATE={}", date_value); // Export DATE variable
+    println!("cargo:rerun-if-changed=env");
     println!("cargo:rerun-if-changed=build.rs"); // Ensure build.rs reruns if it changes
 }
