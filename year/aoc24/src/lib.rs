@@ -1,8 +1,6 @@
-mod day1;
-mod day2;
+mod days;
 
-use day1::*;
-use day2::*;
+pub use days::*;
 
 #[derive(Debug)]
 pub struct AOC24 {
@@ -13,7 +11,7 @@ pub struct AOC24 {
 impl AOC24 {
     pub fn new() -> Self {
         Self {
-            days: vec![AdventDay1::new(), AdventDay2::new()],
+            days: vec![AdventDay1::new(), AdventDay2::new(), AdventDay3::new()],
             test: false,
         }
     }
