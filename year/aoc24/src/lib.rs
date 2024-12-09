@@ -11,7 +11,7 @@ pub struct AOC24 {
 impl AOC24 {
     pub fn new() -> Self {
         Self {
-            days: vec![AdventDay1::new(), AdventDay2::new(), AdventDay3::new()],
+            days: vec![AdventDay1::new(), AdventDay2::new(), AdventDay3::new(), AdventDay4::new(), AdventDay5::new(), AdventDay6::new()],
             test: false,
         }
     }

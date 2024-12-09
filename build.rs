@@ -46,6 +46,8 @@ fn main() {
 
         // Optionally print the date to the build logs for confirmation
         println!("cargo:warning=Setting DATE to: {}", date_value);
+    } else {
+        println!("cargo:warning=Current day: {}", date_value - 1);
     }
 
     // Set the environment variable DATE to the selected value

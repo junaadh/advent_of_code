@@ -62,8 +62,7 @@ if [[ -e "input/day$current_day.txt" || -e "example/day$current_day.txt" || $(gr
   exit 0
 fi
 
-echo "
-// generated for $current_day
+echo "// generated for $current_day
 mod day$current_day;
 pub use day$current_day::*;
 "  >> "year/aoc$current_year/src/days.rs"
